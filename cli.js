@@ -20,3 +20,7 @@ if (args.h) {
 
 // Extracts the timezone
 const timezone = moment.tz.guess();
+// setting lat and long
+const latitude = args.n || args.s * -1;
+const longitude = args.e || args.w * -1;
+
