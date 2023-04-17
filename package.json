@@ -2,7 +2,7 @@
   "name": "my_package",
   "version": "1.0.0",
   "description": "creating new galosh",
-  "type": "module", 
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
@@ -16,11 +16,16 @@
   ],
   "bin": {
     "galosh.js": "./cli.js"
-  }, 
+  },
   "author": "wzahrt",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a02-functions-wzahrt/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a02-functions-wzahrt#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-wzahrt#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.43",
+    "node-fetch": "^3.3.1"
+  }
 }
