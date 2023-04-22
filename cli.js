@@ -24,3 +24,15 @@ const timezone = moment.tz.guess();
 const latitude = args.n || args.s * -1;
 const longitude = args.e || args.w * -1;
 
+const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+latitude+'&longitude='+longitude+'&timezone='+timezone+'&daily=precipitation_hours&current_weather=true');
+
+// Grabs data from request
+const data = await response.json();
+
+
+if (args.j) {
+  console.log(data);
+  process.exit(0);
+}
+
+const days = args.d ?? 1;
