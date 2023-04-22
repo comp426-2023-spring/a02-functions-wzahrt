@@ -42,11 +42,11 @@ if (data.daily.precipitation_hours[days] > 0) {message += "It might be a bit rai
 else {message += "It will be sunny ";}
 
 if (days == 0) {
-	weather += "today";
+	message += "today";
 } else if (days == 1) {
-	weather += "tomorrow.";
+	message += "tomorrow.";
 } else {
-	weather += "in " + days + " days.";
+	message += "in " + days + " days.";
 }
 
 // Logging the final weather message to console
