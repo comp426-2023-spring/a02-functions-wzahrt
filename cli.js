@@ -40,3 +40,14 @@ const days = args.d ?? 1;
 let message = "";
 if (data.daily.precipitation_hours[days] > 0) {message += "It might be a bit rainy ";} 
 else {message += "It will be sunny ";}
+
+if (days == 0) {
+	weather += "today";
+} else if (days == 1) {
+	weather += "tomorrow.";
+} else {
+	weather += "in " + days + " days.";
+}
+
+// Logging the final weather message to console
+console.log(message);
