@@ -36,3 +36,7 @@ if (args.j) {
 }
 
 const days = args.d ?? 1;
+
+let message = "";
+if (data.daily.precipitation_hours[days] > 0) {message += "It might be a bit rainy ";} 
+else {message += "It will be sunny ";}
